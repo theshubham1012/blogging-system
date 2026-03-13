@@ -8,8 +8,8 @@
 
     <!-- right side bar -->
     <div class="col-md-9">
-        <h2>Add new Category</h2>
-        <form action="{% url "add_category" %}" method="post" style="width:500px;">
+        <h2>Add new category</h2>
+        <form action="{% url "add_post" %}" method="post" enctype='multipart/form-data'>
             {% csrf_token %}
             {{ form | crispy}}
             <button type="submit" class="btn btn-warning">Submit</button>

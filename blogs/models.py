@@ -36,6 +36,7 @@ class Blog(models.Model):
     def __str__(self):
         return self.title
     
+    
 class About(models.Model):
     heading = models.CharField(max_length=30)
     description = models.TextField(max_length=250)
