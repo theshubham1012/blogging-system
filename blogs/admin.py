@@ -1,5 +1,5 @@
 from django.contrib import admin
-from . models import Category, Blog, About, Social
+from . models import Category, Blog, About, Social, Comment
 
 
 # to auto generate the slug field
@@ -22,3 +22,4 @@ admin.site.register(Category)
 admin.site.register(Blog, BlogAdmin)
 admin.site.register(About, AboutAdmin)
 admin.site.register(Social)
+admin.site.register(Comment)
