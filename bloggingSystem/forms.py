@@ -4,4 +4,4 @@ from django.contrib.auth.forms import UserCreationForm         #basic user form 
 class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
-        fields = {'username' , 'password1' , 'password2'}  #in django pass1 -> password and pass2-> comfirm password
+        fields = ['username' , 'password1' , 'password2']  #in django pass1 -> password and pass2-> comfirm password
