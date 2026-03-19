@@ -7,6 +7,7 @@
     {% include 'dashboard/sidebar.html'%}
 
     <!-- right side bar -->
+    {% if perms.auth.delete_blog %}
     <div class="col-md-9">
         <h2>Edit blog post</h2>
         <form action="{% url "edit_post" post.id %}" method="post" enctype='multipart/form-data'>
@@ -16,5 +17,8 @@
         </form>
         <br>
     </div>
+    {% elif %}
+    <h4>You don't have permissions to edit post</h4>
+    {% endif %}
 </div>
 {% endblock content %}
