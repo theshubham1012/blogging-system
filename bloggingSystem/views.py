@@ -19,7 +19,6 @@ def home(request):
     return render(request, 'home.html', context)
 
 def register(request):
-    resp = ""
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
